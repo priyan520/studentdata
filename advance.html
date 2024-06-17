@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="collegeData.js"></script>
+        <style>
+            td , th
+            {
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Collage Data</h1>
+        Gender
+        <select name="" id="sel">
+            <option value="">All</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+        </select>
+        Department
+        <select name="" id="dep">
+            <option value="">All</option>
+            <option value="">Computer</option>
+            <option value="">Automobile</option>
+            <option value="">Civil</option>
+        </select>
+        Year
+        <select name="" id="year">
+            <option value="">All</option>
+            <option value="">First</option>
+            <option value="">Second</option>
+            <option value="">Third</option>
+            <option value="">Fourth</option>
+            <option value="">Pass Out</option>
+        </select>
+        Admission_year
+        <select name="" id="ad_year">
+            <option value="">All</option>
+            <option value="">2018</option>
+            <option value="">2019</option>
+            <option value="">2020</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+        </select>
+        Merit:
+        <input type="number" placeholder="Enter Merit" id="merit">
+        <select name="" id="comp">
+            <option value="">All</option>
+            <option value="">Equle</option>
+            <option value="">Greater ></option>
+            <option value="">Less <</option>
+        </select>
+        Merit Category
+        <select name="" id="met_cat">
+            <option value="">All</option>
+            <option value="">Regular</option>
+            <option value="">D2D</option>
+        </select>
+
+        <button onclick="filter('Reset')">Reset All</button>
+
+        <button onclick="filter()">Filter</button>
+        <table border="1" width="100%" id="table">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Gender</th>
+                <th>Ad Year</th>
+                <th>Merit</th>
+                <th>Ad Cat</th>
+                <th>Collage</th>
+                <th>Department</th>
+                <th>Dep Head</th>
+                <th>Year Head</th>
+                <th>Year</th>
+            </tr>
+        </table> 
+    </body>
+    <script src="script.js"></script>
+</html>
